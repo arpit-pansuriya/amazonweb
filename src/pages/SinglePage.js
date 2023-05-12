@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-script-url
+
 import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
@@ -187,14 +189,14 @@ const SinglePage = () => {
                 </div>
                 <div className="d-flex align-items-center gap-10 my-3">
                   <h3 className="product-heading"> Product Link :</h3>
-                  <a
+                  <Link
                     href="javascript:void(0)"
                     onClick={() => {
                       copyToClipboard("www.google.com");
                     }}
                   >
                     Copy Product Link
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -243,9 +245,12 @@ const SinglePage = () => {
                 </div>
                 {orderedProduct && (
                   <div>
-                    <a href="" className="text-dark text-decoration-underline">
+                    <Link
+                      href=""
+                      className="text-dark text-decoration-underline"
+                    >
                       Write A Review
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
