@@ -8,6 +8,7 @@ import Color from "../components/Color";
 import { GoGitCompare } from "react-icons/go";
 import { AiOutlineHeart } from "react-icons/ai";
 import Container from "../components/Container";
+import { Link } from "react-router-dom";
 
 const SinglePage = () => {
   const [orderedProduct, setOrderedProduct] = useState(true);
@@ -164,16 +165,16 @@ const SinglePage = () => {
 
                 <div className="d-flex align-items-center gap-15 py-2  ">
                   <div>
-                    <a href="">
+                    <Link href="">
                       <GoGitCompare className="fe-2 fs-5"></GoGitCompare> Add to
                       Compare
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a href="">
+                    <Link href="">
                       <AiOutlineHeart className="fe-2 fs-5"></AiOutlineHeart>
                       Add to Wishlist
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="d-flex flex-column gap-10 my-3">

@@ -1,5 +1,5 @@
 import React from "react";
-import { BsSearch } from "react-icons/bs";
+
 import { Link } from "react-router-dom";
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 import newslatter from "../images/newsletter.png";
@@ -62,18 +62,18 @@ const Footer = () => {
                 </a>
               </div>
               <div className="social-icons d-flex align-items-center gap-30 mt-4">
-                <a href="" className="text-white">
+                <Link href="" className="text-white">
                   <BsLinkedin className="fs-4"></BsLinkedin>
-                </a>
-                <a href="" className="text-white">
+                </Link>
+                <Link href="" className="text-white">
                   <BsGithub className="fs-4"></BsGithub>
-                </a>
-                <a href="" className="text-white">
+                </Link>
+                <Link href="" className="text-white">
                   <BsYoutube className="fs-4"></BsYoutube>
-                </a>
-                <a href="" className="text-white">
+                </Link>
+                <Link href="" className="text-white">
                   <BsInstagram className="fs-4"></BsInstagram>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-3">
